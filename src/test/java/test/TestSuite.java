@@ -1,17 +1,11 @@
 package test;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -91,7 +85,7 @@ public void TS03_Delete_the_item() throws InterruptedException {
 
 
 @Test(priority = 4)
-public void TS04_Delete_the_item() throws InterruptedException {
+public void TS04_Filtering_a_to_do() throws InterruptedException {
 	//Extract All values before click Active and Completed Value
 	List<WebElement> activeItem=driver.findElements(By.xpath("(//li[not(@class='completed')])/div/label"));
 	String completedItems=driver.findElement(By.xpath("(//li[@class='completed'])/div/label")).getText();

@@ -6,8 +6,8 @@
       <class name="test.TestSuite">
         <methods>
           <include name="setup"/>
-          <include name="TS04_Delete_the_item"/>
           <include name="close"/>
+          <include name="TS04_Filtering_a_to_do"/>
         </methods>
       </class> <!-- test.TestSuite -->
     </classes>
